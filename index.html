@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zenith Chai — The Peak of the Pour</title>
+<meta name="description" content="Zenith Chai. Single-estate Assam leaf, whole spice, and ceremony in a cup.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Noto+Nastaliq+Urdu:wght@500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div class="preloader" id="preloader">
+  <div class="preloader-mark">Z</div>
+  <div class="preloader-bar-track"><div class="preloader-bar" id="preloaderBar"></div></div>
+  <div class="preloader-label"><span id="preloaderPct">0</span>% &nbsp;steeping</div>
+</div>
+
+<!-- Grain overlay -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- Nav -->
+<header class="nav">
+  <div class="nav-mark">Zenith <span>Chai</span></div>
+  <nav class="nav-links">
+    <a href="#blend">The Blend</a>
+    <a href="#origins">Origins</a>
+  </nav>
+  <a href="#reserve" class="nav-cta">Reserve the Tin</a>
+</header>
+
+<!-- Opening statement -->
+<section class="intro">
+  <p class="intro-eyebrow">Zenith Chai — Est. for the unhurried</p>
+  <h1 class="intro-title">A ritual,<br><em>distilled.</em></h1>
+  <p class="intro-sub">Scroll to watch a single cup come to life —<br class="br-desktop"> leaf, spice, and steam, in one continuous pour.</p>
+  <div class="intro-scroll-cue">
+    <span>Scroll</span>
+    <div class="cue-line"><div class="cue-dot"></div></div>
+  </div>
+</section>
+
+<!-- Pinned scrubbing sequence -->
+<section class="sequence-wrapper" id="sequenceWrapper">
+  <div class="sequence-pin">
+    <canvas id="sequenceCanvas"></canvas>
+    <div class="sequence-vignette"></div>
+
+    <!-- Steep ring, progress indicator -->
+    <div class="steep-ring" aria-hidden="true">
+      <svg viewBox="0 0 100 100">
+        <circle class="ring-track" cx="50" cy="50" r="44"></circle>
+        <circle class="ring-progress" id="ringProgress" cx="50" cy="50" r="44"></circle>
+      </svg>
+      <div class="steep-ring-label" id="steepLabel">01</div>
+    </div>
+
+    <!-- Story beats -->
+    <div class="beat beat-1" data-beat="1">
+      <p class="beat-eyebrow">I — Origin</p>
+      <h2 class="beat-title">Leaves<br>at rest.</h2>
+      <p class="beat-copy">Whole-leaf Kenyan black tea, hand-sewn into muslin. Nothing is ground. Nothing is rushed.</p>
+    </div>
+
+    <div class="beat beat-2" data-beat="2">
+      <p class="beat-eyebrow">II — Bloom</p>
+      <h2 class="beat-title">The spice<br>breaks open.</h2>
+      <p class="beat-copy">Green cardamom, clove, and cassia bark — cracked at the moment of infusion, never before.</p>
+    </div>
+
+    <div class="beat beat-3" data-beat="3">
+      <p class="beat-eyebrow">III — Union</p>
+      <h2 class="beat-title">Milk finds<br>its match.</h2>
+      <p class="beat-copy">Slow-simmered, not stirred. The color of a Himalayan dawn, if dawns were drinkable.</p>
+    </div>
+
+    <div class="beat beat-4" data-beat="4">
+      <p class="beat-eyebrow">IV — Zenith</p>
+      <h2 class="beat-title">The peak<br>of the pour.</h2>
+      <p class="beat-copy">Poured. Held. Yours.</p>
+      <a href="#reserve" class="beat-cta">Reserve the Tin →</a>
+    </div>
+  </div>
+</section>
+
+<!-- The Blend -->
+<section class="blend" id="blend">
+  <p class="section-eyebrow">The Blend</p>
+  <h2 class="section-title">Three ingredients.<br><em>No shortcuts.</em></h2>
+
+  <div class="blend-grid">
+    <article class="blend-item">
+      <div class="blend-glow" aria-hidden="true"></div>
+      <span class="blend-index">Kenya</span>
+      <h3>High-Grown Black Leaf</h3>
+      <p>Orthodox-processed leaf from Kenya's highlands, chosen for malt and body — the grade Lahore's best dhabas insist on.</p>
+      <span class="blend-underline" aria-hidden="true"></span>
+    </article>
+    <article class="blend-item">
+      <div class="blend-glow" aria-hidden="true"></div>
+      <span class="blend-index">Guatemala</span>
+      <h3>Green Cardamom</h3>
+      <p>Hand-cracked pods, traded through Karachi's spice bazaars for generations. The scent that opens the cup.</p>
+      <span class="blend-underline" aria-hidden="true"></span>
+    </article>
+    <article class="blend-item">
+      <div class="blend-glow" aria-hidden="true"></div>
+      <span class="blend-index">Zanzibar</span>
+      <h3>Whole Clove</h3>
+      <p>Toasted whole, added last. Warmth without bitterness — the note that lingers after the sip.</p>
+      <span class="blend-underline" aria-hidden="true"></span>
+    </article>
+  </div>
+</section>
+
+<!-- Origins -->
+<section class="origins" id="origins">
+  <div class="origins-inner">
+    <div class="origins-text">
+      <p class="section-eyebrow">Origins</p>
+      <p class="origins-type">
+        <span class="type-text" data-text="Karachi spice. Lahore blend. Poured anywhere."></span><span class="type-cursor">|</span>
+      </p>
+      <h2 class="section-title">Chai, the way<br><em>home tastes.</em></h2>
+      <!-- <p class="origins-copy">Zenith Chai is a Pakistani company, blended by hand in Lahore. We bring in high-grown Kenyan and Ceylon leaf, then finish it with whole spice from Karachi's Jodia Bazaar — cardamom, clove, and cassia, measured the way a proper karak demands. No shortcuts, no flavouring. Just the dhaba ritual, done with more care.</p> -->
+   <p class="origins-copy tea-story__body--typed" data-text="Zenith Chai is a Pakistani company, blended by hand in Lahore. We bring in high-grown Kenyan and Ceylon leaf, then finish it with whole spice from Karachi's Jodia Bazaar — cardamom, clove, and cassia, measured the way a proper karak demands. No shortcuts, no flavouring. Just the dhaba ritual, done with more care.">
+  <span class="type-typed-text"></span><span class="type-cursor">|</span>
+</p>
+    </div>
+    <div class="origins-media">
+      <img src="images/ezgif-frame-092.jpg" alt="Zenith Chai poured in a gilded teacup, steam rising" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- History -->
+<section class="history" id="history">
+  <div class="history-head">
+    <p class="section-eyebrow">The History</p>
+    <h2 class="section-title">Four thousand years,<br><em>one leaf.</em></h2>
+  </div>
+
+  <div class="history-pin">
+    <div class="history-progress" aria-hidden="true">
+      <span class="history-progress-fill" id="historyProgressFill"></span>
+    </div>
+
+    <div class="history-chapters">
+      <!-- Chapter 1 -->
+      <article class="history-chapter" data-chapter="1">
+        <!-- TODO: swap in the real Chapter I image — using cup.png as a temporary placeholder -->
+        <div class="history-bg" style="background-image:url('./time/first.png');"></div>
+        <div class="history-overlay">
+          <span class="history-meta">2737 BCE — Chapter I</span>
+          <h3 class="history-title">The emperor<br>and the leaf</h3>
+          <p class="history-urdu" lang="ur" dir="rtl">افسانوی آغاز</p>
+          <p class="history-copy">Legend tells of Shen Nong, the divine farmer of ancient China, who rested beneath a wild tree as a few leaves drifted into his boiling water.</p>
+        </div>
+      </article>
+
+      <!-- Chapter 2 -->
+      <article class="history-chapter" data-chapter="2">
+        <div class="history-bg" style="background-image:url('./time/tansty.jpg');"></div>
+        <div class="history-overlay">
+          <span class="history-meta">618–907 CE — Chapter II</span>
+          <h3 class="history-title">Poetry<br>in the cup</h3>
+          <p class="history-urdu" lang="ur" dir="rtl">کپ میں شاعری</p>
+          <p class="history-copy">An atmospheric chamber where Tang-dynasty masters meditated beside glowing clay stoves, and tea became ceremony.</p>
+        </div>
+      </article>
+
+      <!-- Chapter 3 -->
+      <article class="history-chapter" data-chapter="3">
+        <!-- TODO: swap in the real Chapter III image — using cup.png as a temporary placeholder -->
+        <div class="history-bg" style="background-image:url('./time/silkoroute.jpg');"></div>
+        <div class="history-overlay">
+          <span class="history-meta">8th–14th Century — Chapter III</span>
+          <h3 class="history-title">The Silk Road<br>caravans</h3>
+          <p class="history-urdu" lang="ur" dir="rtl">شاہراہِ ریشم کے قافلے</p>
+          <p class="history-copy">Precious compressed blocks of dark tea, traded hand to hand across desert oasis hubs from Xi'an to Samarkand.</p>
+        </div>
+      </article>
+
+      <!-- Chapter 4 -->
+      <article class="history-chapter" data-chapter="4">
+        <!-- TODO: swap in the real Chapter IV image — using cup.png as a temporary placeholder -->
+        <div class="history-bg" style="background-image:url('./time/fourth.png');"></div>
+        <div class="history-overlay">
+          <span class="history-meta">16th–18th Century — Chapter IV</span>
+          <h3 class="history-title">Courts of<br>spice and milk</h3>
+          <p class="history-urdu" lang="ur" dir="rtl">مغل شاہی محل</p>
+          <p class="history-copy">Ornate brass kettles and aromatic whole spices inside royal Mughal courtyards — the birth of chai as we know it.</p>
+        </div>
+      </article>
+
+      <!-- Chapter 5 -->
+      <article class="history-chapter" data-chapter="5">
+        <!-- TODO: swap in the real Chapter V image — using cup.png as a temporary placeholder -->
+        <div class="history-bg" style="background-image:url('./time/last.png');"></div>
+        <div class="history-overlay">
+          <span class="history-meta">Present Day — Chapter V</span>
+          <h3 class="history-title">The modern<br>street corner</h3>
+          <p class="history-urdu" lang="ur" dir="rtl">چائے کا ٹھیلا</p>
+          <p class="history-copy">Steaming doodh patti, poured from a height, amid the noise and color of every city street it's ever met.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="history-dots" id="historyDots">
+      <span class="history-dot" data-index="0"></span>
+      <span class="history-dot" data-index="1"></span>
+      <span class="history-dot" data-index="2"></span>
+      <span class="history-dot" data-index="3"></span>
+      <span class="history-dot" data-index="4"></span>
+    </div>
+  </div>
+</section>
+
+
+<!-- The Selection -->
+<section class="selection" id="selection">
+  <div class="selection-head">
+    <p class="section-eyebrow">The Selection</p>
+    <p class="selection-urdu" lang="ur" dir="rtl">چائے کی الماری</p>
+  </div>
+  <h2 class="section-title">Pick your<br><em>pour.</em></h2>
+  <p class="selection-sub">Three ways to steep, each true to how it's poured back home.</p>
+
+  <div class="selection-grid">
+    <article class="selection-card">
+      <div class="card-glow" aria-hidden="true"></div>
+      <h3>Doodh Patti</h3>
+      <p class="card-urdu" lang="ur" dir="rtl">دودھ پتی</p>
+      <p class="card-copy">Full-cream, extra malt.</p>
+    </article>
+    <article class="selection-card">
+      <div class="card-glow" aria-hidden="true"></div>
+      <h3>Karak</h3>
+      <p class="card-urdu" lang="ur" dir="rtl">کڑک</p>
+      <p class="card-copy">Strong-brewed, minimal milk.</p>
+    </article>
+    <article class="selection-card">
+      <div class="card-glow" aria-hidden="true"></div>
+      <h3>Zafrani</h3>
+      <p class="card-urdu" lang="ur" dir="rtl">زعفرانی</p>
+      <p class="card-copy">Saffron-laced, for slow mornings.</p>
+    </article>
+  </div>
+</section>
+
+
+<!-- Closing CTA -->
+<section class="reserve" id="reserve">
+  <p class="section-eyebrow">Reserve the Tin</p>
+  <h2 class="reserve-title">Your cup<br><em>is waiting.</em></h2>
+  <p class="reserve-copy">100g tins. Hand-numbered. Shipped within 48 hours of your order.</p>
+  <button class="reserve-btn">Reserve Now — $38</button>
+</section>
+
+<footer class="footer">
+  <div class="footer-mark">Zenith Chai</div>
+  <div class="footer-links">
+    <a href="#blend">The Blend</a>
+    <a href="#origins">Origins</a>
+    <a href="#reserve">Reserve</a>
+  </div>
+  <p class="footer-copy">© 2026 Zenith Chai. Steeped in small batches.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
